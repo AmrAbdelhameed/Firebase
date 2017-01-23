@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "381866066686",
+    "firebase_url": "https://fir-registrationlogin-421cb.firebaseio.com",
+    "project_id": "fir-registrationlogin-421cb",
+    "storage_bucket": "fir-registrationlogin-421cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:381866066686:android:5a5f8a78198a3ca7",
+        "android_client_info": {
+          "package_name": "com.example.amr.firebaseregistrationloginexam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "381866066686-dp4c45con5v263cu0ik9813p9oicoe5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbxEb_F8y9YOOsVTeyrIrzRtaTOCCkK6Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
