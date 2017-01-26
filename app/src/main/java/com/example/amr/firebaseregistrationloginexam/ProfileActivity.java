@@ -32,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
         firebaseAuth = FirebaseAuth.getInstance();
+        //user
         user = firebaseAuth.getCurrentUser();
 
         mFirebaseInstance = FirebaseDatabase.getInstance();
