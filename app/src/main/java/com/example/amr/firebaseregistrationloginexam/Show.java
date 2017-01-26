@@ -34,14 +34,15 @@ public class Show extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         room_name = "Vote";
         lv = (ListView) findViewById(R.id.listView1);
+
         array_negative = new ArrayList<>();
         array_positive = new ArrayList<>();
         array_Name = new ArrayList<>();
 
         root = FirebaseDatabase.getInstance().getReference().child(room_name);
-
 
         root.addChildEventListener(new ChildEventListener() {
             @Override
@@ -100,6 +101,7 @@ public class Show extends AppCompatActivity {
 
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;

@@ -21,6 +21,7 @@ public class NotificationShow extends AppCompatActivity {
         t = (TextView) findViewById(R.id.textView4);
         t.setText(a);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
