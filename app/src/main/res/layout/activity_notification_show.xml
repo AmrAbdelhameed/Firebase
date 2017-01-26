@@ -10,12 +10,12 @@
     tools:context="com.example.amr.firebaseregistrationloginexam.NotificationShow">
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hello"
-        android:textSize="100dp"
-        android:id="@+id/textView4"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:text="Hello"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="100dp" />
 </RelativeLayout>

@@ -13,13 +13,13 @@
     <stroke
         android:width="5dp"
 
-        android:color="#3D9471"
+        android:color="#3F51B5"
         >
     </stroke>
 
     <solid
 
-        android:color="#3D9471"
+        android:color="#3F51B5"
 
         >
 

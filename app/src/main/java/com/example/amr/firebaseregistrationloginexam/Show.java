@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
@@ -22,7 +21,6 @@ import java.util.Iterator;
 
 public class Show extends AppCompatActivity {
 
-    private TextView chat_conversation;
     private String room_name;
     ArrayAdapter<String> adapter;
     private DatabaseReference root;

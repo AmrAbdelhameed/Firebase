@@ -9,42 +9,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.amr.firebaseregistrationloginexam.RegistrationActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Email Address:"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true" />
-
-    <EditText
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtEmailRegistration"
-        android:layout_below="@+id/textView" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Password"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/txtEmailRegistration" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/txtPasswordRegistration"
-        android:layout_below="@+id/textView2" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Email Address:"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registration"
-        android:id="@+id/btnRegistrationUser"
-        android:onClick="btnRegistrationUser_Click"
-        android:layout_below="@+id/txtPasswordRegistration"
-        android:layout_centerHorizontal="true" />
+            <EditText
+                android:id="@+id/txtEmailRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtEmailRegistration"
+                android:text="Password"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/txtPasswordRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnRegistrationUser"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/txtPasswordRegistration"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/amr"
+                android:onClick="btnRegistrationUser_Click"
+                android:text="Registration"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
