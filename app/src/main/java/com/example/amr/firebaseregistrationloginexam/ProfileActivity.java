@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         firebaseAuth = FirebaseAuth.getInstance();
         user = firebaseAuth.getCurrentUser();
 
@@ -95,11 +95,19 @@ public class ProfileActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Done", Toast.LENGTH_SHORT).show();
         }
     }
+
     public void logout(View view) {
 
         FirebaseAuth.getInstance().signOut();
         finish();
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
+
+    }
+
+    public void show(View view) {
+
+        Intent intent = new Intent(getApplicationContext(), Show.class);
         startActivity(intent);
 
     }

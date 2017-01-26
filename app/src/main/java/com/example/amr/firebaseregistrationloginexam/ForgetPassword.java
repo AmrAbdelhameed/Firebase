@@ -3,6 +3,8 @@ package com.example.amr.firebaseregistrationloginexam;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,7 +24,7 @@ public class ForgetPassword extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         firebaseAuth = FirebaseAuth.getInstance();
         forgot_emailEditText = (EditText) findViewById(R.id.Email_Reset_EditText);
         resetPassword = (Button) findViewById(R.id.reset_btn);
@@ -53,4 +55,18 @@ public class ForgetPassword extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == android.R.id.home) {
+            finish();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

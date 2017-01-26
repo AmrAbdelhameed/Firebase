@@ -41,6 +41,11 @@
         <activity
             android:name=".ForgetPassword"
             android:label="Reset Password" />
+        <activity
+            android:name=".Show"
+            android:label="Show All Reviews">
+
+        </activity>
     </application>
 
 </manifest>
